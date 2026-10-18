@@ -1,0 +1,60 @@
+﻿Bug ID,Title,Steps to Reproduce,Expected Result ,Actual Result,Priority,Priority
+Bug_001,Login failed for registered user,"1. Enter register email.
+ 
+2. Enter password. 
+
+3. Click ""Login"".",Should login successfully to the home page.,"Sometimes system shows error as ""Login was unsuccessful. Please correct the errors and try again. No customer account found""",High ,Critical
+Bug_002,Product sorting order (Z to A) resets after pagination,"1. Set the product sorting to Z to A.
+
+2. Navigate to the next page of products.
+
+3. Verify that the A to Z sorting order is still applied.",Should display the products with Z to A order,"After navigating to the next page, the products fail to maintain the 'Z to A' sorting order",Medium,Major
+Bug_003,High to Low Price Sorting Reset During Pagination,"1. Set the product sorting to price High to Low.
+
+2. Navigate to the next page of products.
+
+3. Verify that the price High to Lowsorting order is still applied.",Should display the products with price sorting High to Low order,"After navigating to the next page, the products fail to maintain the 'High to Low' sorting order",Medium,Major
+Bug_004,Duplicate Item Addition to Wishlist,"1. Open a product detail page or listing.
+
+2. Click on the Wishlist icon (Heart).
+
+3. Check the wishlist section to ensure the product was added.","Should show meassge as "" Item already added in the wishlist""","The same item can be added multiple times to the wishlist without a ""Duplicate Item"" notification",High,Critical
+Bug_005,Shipping address mobile format wrong,"1. Click ""Checkout""
+
+2. Enter mobile number in shipping address details
+
+3. click ""Continue""",Should show validation error ,No error shows and order has placed,High,Major
+Bug_006,Wishlist Count in Navigation Bar Displays Incorrect Value,"1. Open the website and log in as a registered user.
+2. Create or select a custom wishlist.
+3. Add one or more products to the custom wishlist.
+4. Observe the wishlist icon/count in the navbar.
+5. Add a product to the default wishlist and observe the navbar count again.
+","The Navigation bar wishlist count should display the total 
+number of wishlist items, including items added to
+ custom Wishlist.","The Navigation bar wishlist count not getting updated once
+ item added to custom wishlist",Medium,Minor
+Bug_007,Custom Wishlist Attributes Fail to Update Correctly,"1. Add a product with specific attributes to the Wishlist.
+2. Add it to a custom wishlist
+3. Click Edit or open the product to update its attributes.
+4. Change one or more attributes (e.g., color, size).
+5. Save or update the wishlist item.
+6 Observe the wishlist items.
+","Updating a product’s attributes in the wishlist should modify 
+the existing wishlist entry, not create a new one.","A new wishlist entry is created in the default wishlist 
+instead of updating a custom wishlist item.",Medium,Major
+Bug_008,Rental Product in Cart Cannot Be Checked Out Despite Valid Date Selection,"1. Navigate to a rental product in the store.
+2. Select valid rental start and end dates (within the allowed availability period).
+3. Add the product to the cart.
+4. Proceed to checkout.
+5. Observe that checkout is blocked or fails, despite valid date selection.","The rental product should proceed to checkout successfully 
+when valid dates are selected.","Checkout is blocked, and the system treats the rental
+ dates as invalid.",High,Major
+Bug_009,Coupon Code Validation Error,"1. Apply a valid coupon code during checkout.
+2. Observe system response.",Coupon should apply successfully.,Error message displayed incorrectly.,High,Major
+Bug_010,Product Image Not Updating on Attribute Change.,"1. Open a product with multiple color options.
+2. Change the color attribute.
+3. Observe the product image.",Product image should update to match the selected attribute.,Image remains unchanged.,Medium,Major
+Bug_011,Compare Products Feature Not Working Properly.,"1. Add two products to comparison list.
+2. Open comparison page.",All product attributes should display correctly.,Some attributes are missing or misaligned.,Medium,Minor
+Bug_012,Search Results Pagination Error,"1. Search for a keyword with many results.
+2. Navigate to page 2 or 3.",Each page should show unique products.,Pages show duplicates or skip items.,low,Minor
